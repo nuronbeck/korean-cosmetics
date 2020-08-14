@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_182" data-name="Прямоугольник 182" width="20" height="20" transform="translate(1088 18)" fill="none" stroke="#e00e55" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Группа_масок_29" data-name="Группа масок 29" transform="translate(-1088 -18)" clip-path="url(#clip-path)">
+    <path id="heart-outline" d="M16.966,3.846c-3.121,0-4.659,3.077-4.659,3.077S10.769,3.846,7.648,3.846A4.647,4.647,0,0,0,3.077,8.5c-.053,5.256,4.17,8.994,8.8,12.135a.769.769,0,0,0,.865,0c4.628-3.141,8.85-6.879,8.8-12.135A4.647,4.647,0,0,0,16.966,3.846Z" transform="translate(1085.693 15.679)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.538"/>
+  </g>
+</svg>

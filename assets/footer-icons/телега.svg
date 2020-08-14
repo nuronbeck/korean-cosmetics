@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_31" data-name="Прямоугольник 31" width="24" height="24" transform="translate(0 0)" fill="#333"/>
+    </clipPath>
+  </defs>
+  <g id="телега" transform="translate(-1048 -897)">
+    <g id="Группа_масок_12" data-name="Группа масок 12" transform="translate(1048 897)" clip-path="url(#clip-path)">
+      <path id="telegram" d="M9.417,15.181l-.4,5.584a1.388,1.388,0,0,0,1.109-.537l2.663-2.545,5.518,4.041c1.012.564,1.725.267,2-.931L23.931,3.821h0c.321-1.5-.541-2.081-1.527-1.714L1.114,10.257C-.339,10.821-.317,11.631.867,12L6.31,13.691,18.953,5.78c.6-.394,1.136-.176.691.218Z" transform="translate(0 0)" fill="#333"/>
+    </g>
+  </g>
+</svg>

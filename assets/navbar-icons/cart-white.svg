@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_183" data-name="Прямоугольник 183" width="20" height="20" transform="translate(1254 18)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Группа_масок_30" data-name="Группа масок 30" transform="translate(-1254 -18)" clip-path="url(#clip-path)">
+    <g id="cart-outline" transform="translate(1252.513 16.101)">
+      <circle id="Эллипс_16" data-name="Эллипс 16" cx="0.744" cy="0.744" r="0.744" transform="translate(7.437 18.591)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.487"/>
+      <circle id="Эллипс_17" data-name="Эллипс 17" cx="0.744" cy="0.744" r="0.744" transform="translate(17.848 18.591)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.487"/>
+      <path id="Контур_45" data-name="Контур 45" d="M2.231,3.718H5.206L7.437,16.36h11.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.487"/>
+      <path id="Контур_46" data-name="Контур 46" d="M7.437,13.386H19.03a.372.372,0,0,0,.365-.3l1.339-6.693a.372.372,0,0,0-.365-.445H5.949" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.487"/>
+    </g>
+  </g>
+</svg>

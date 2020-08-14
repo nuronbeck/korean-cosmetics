@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_217" data-name="Прямоугольник 217" width="14" height="14" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Группа_масок_34" data-name="Группа масок 34" opacity="0.5" clip-path="url(#clip-path)">
+    <path id="chevron-up-outline" d="M5.665,14.971,11.33,9.306l5.665,5.665" transform="translate(-4.329 -5.334)" fill="none" stroke="#457e98" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.428"/>
+  </g>
+</svg>
