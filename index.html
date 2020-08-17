@@ -26,7 +26,7 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#" title="Основной макияж">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Топ 100">
                             <span>
                                 <div class="sidebar-figure-star" title="Топ 100">
                                     New
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Основной макияж">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Бренды">
                             <span>
                                 <div class="sidebar-figure-star" title="Бренды">
                                     New
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Основной макияж">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Рапродажа">
                             <span>
                                 <div class="sidebar-figure-star" title="Рапродажа">
                                     Sale
@@ -65,7 +65,7 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#" title="Основной макияж">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Основной макияж">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-1.svg" alt="Основной макияж">
                                 <span class="sidebar-item-title">
@@ -76,7 +76,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Уход за кожей">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Уход за кожей">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-2.svg" alt="Уход за кожей">
                                 <span class="sidebar-item-title">
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Маски">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Маски">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-3.svg" alt="Маски">
                                 <span class="sidebar-item-title">
@@ -98,7 +98,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Уход за волосами">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Уход за волосами">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-4.svg" alt="Уход за волосами">
                                 <span class="sidebar-item-title">
@@ -109,7 +109,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Очищающие средства"> 
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Очищающие средства"> 
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-5.svg" alt="Очищающие средства">
                                 <span class="sidebar-item-title">
@@ -120,7 +120,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Корейские товары">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Корейские товары">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-6.svg" alt="Корейские товары">
                                 <span class="sidebar-item-title">
@@ -131,7 +131,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Наборы">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Наборы">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-7.svg" alt="Наборы">
                                 <span class="sidebar-item-title">
@@ -142,7 +142,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Инструментарий">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="Инструментарий">
                             <span>
                                 <img class="sidebar-icon" src="assets/sidebar-icons/icon-8.svg" alt="Инструментарий">
                                 <span class="sidebar-item-title">
@@ -156,7 +156,7 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#" title="Основной макияж">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="info@bbccdd.org">
                             <span>
                                 <img style="width: 20px;" class="sidebar-icon" src="assets/sidebar-icons/icon-email.svg" alt="info@bbccdd.org">
                                 <span class="sidebar-item-title">
@@ -166,7 +166,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Основной макияж">
+                        <a href="#" data-toggle="tooltip" data-placement="auto" title="+8210 1234-56-78">
                             <span>
                                 <img style="width: 20px;" class="sidebar-icon" src="assets/sidebar-icons/icon-phone.svg" alt="+8210 1234-56-78">
                                 <span class="sidebar-item-title">
@@ -215,7 +215,7 @@
                                             <img class="nav-menu-active" src="./assets/navbar-icons/favourites-white.svg" alt="Избранные">
                                         </a>
                                     </li>
-                                    <li class="buyer-cart" title="Корзина">
+                                    <li class="buyer-cart" title="Корзина" id="cart-items-sidebar">
                                         <a href="#">
                                             <img src="./assets/navbar-icons/cart.svg" alt="Корзина">
                                             <img class="nav-menu-active" src="./assets/navbar-icons/cart-white.svg" alt="Корзина">
@@ -951,6 +951,175 @@
             </div>
         </div>
 
+        <div class="items-cart-modal">
+            
+            <div class="items-cart-wrapper">
+                <div class="cart-empty-title">
+                    Корзина еще пуста
+                </div>
+                <div class="cart-empty-image">
+                    <img src="./assets/cart-empty-image.svg" alt="Корзина пуста">
+                </div>
+            </div>
+
+            <div class="items-cart-wrapper">
+
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img width="60" height="60" src="./assets/table-items/item-1.jpg" alt="Image">
+                    </div>
+                    <div class="cart-item-content">
+                        <div class="cart-item-title">
+                            Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
+                        </div>
+                        <div class="cart-item-manufacturer">
+                            FarmStay
+                        </div>
+                        <div class="cart-item-codes">
+                            <div class="cart-item-id">
+                                <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
+                                <span>015030</span>
+                            </div>
+                            <div class="cart-item-barcode">
+                                <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
+                                <span>8809389038039</span>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-calc">
+                            <div class="table-item-counter">
+                                <input type="number" placeholder="кол" value="0" min="0" max="9999">
+                                <span class="table-item-counter-up"></span>
+                                <span class="table-item-counter-down"></span>
+                            </div>
+                            <div class="cart-calculated-price">
+                                $43,20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img width="60" height="60" src="./assets/table-items/item-2.jpg" alt="Image">
+                    </div>
+                    <div class="cart-item-content">
+                        <div class="cart-item-title">
+                            Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
+                        </div>
+                        <div class="cart-item-manufacturer">
+                            FarmStay
+                        </div>
+                        <div class="cart-item-codes">
+                            <div class="cart-item-id">
+                                <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
+                                <span>015030</span>
+                            </div>
+                            <div class="cart-item-barcode">
+                                <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
+                                <span>8809389038039</span>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-calc">
+                            <div class="table-item-counter">
+                                <input type="number" placeholder="кол" value="0" min="0" max="9999">
+                                <span class="table-item-counter-up"></span>
+                                <span class="table-item-counter-down"></span>
+                            </div>
+                            <div class="cart-calculated-price">
+                                $43,20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img width="60" height="60" src="./assets/table-items/item-3.jpg" alt="Image">
+                    </div>
+                    <div class="cart-item-content">
+                        <div class="cart-item-title">
+                            Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
+                        </div>
+                        <div class="cart-item-manufacturer">
+                            FarmStay
+                        </div>
+                        <div class="cart-item-codes">
+                            <div class="cart-item-id">
+                                <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
+                                <span>015030</span>
+                            </div>
+                            <div class="cart-item-barcode">
+                                <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
+                                <span>8809389038039</span>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-calc">
+                            <div class="table-item-counter">
+                                <input type="number" placeholder="кол" value="0" min="0" max="9999">
+                                <span class="table-item-counter-up"></span>
+                                <span class="table-item-counter-down"></span>
+                            </div>
+                            <div class="cart-calculated-price">
+                                $43,20
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div class="items-cart-wrapper">
+
+                <div class="cart-order-calculated">
+                    <div>
+                        <div class="title-calculated">Итоговый вес брутто:</div>
+                        <div class="value-calculated">1896 г.</div>
+                    </div>
+                    <div>
+                        <div class="title-calculated">Стоимость товаров:</div>
+                        <div class="value-calculated">$100,00</div>
+                    </div>
+                    <div>
+                        <div class="title-calculated">Стоимость доставки:</div>
+                        <div class="value-calculated">$32,90</div>
+                    </div>
+                    <div>
+                        <div class="title-calculated">Депозит:</div>
+                        <div class="value-calculated">$55,00</div>
+                    </div>
+                    <div>
+                        <div class="title-calculated">Курьер:</div>
+                        <div class="value-calculated">
+                            EMS
+                            <span class="change-delivery-man">
+                                <img width="20" height="20" src="./assets/cart-icons/icon-change-delivery.svg" alt="Change">
+                                Выбрать другого курьера
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-order-full-price">
+                    <span class="cart-full-price-title">
+                        Итого к оплате:
+                    </span>
+                    <span class="cart-full-price-money">
+                        $77,90
+                    </span>
+                    <span class="cart-full-price-discount">
+                        $132,90
+                    </span>
+                </div>
+                
+                <div class="cart-order-actions">
+                    <button>Оформить заказ</button>
+                    <a href="#">Перейти в корзину</a>
+                </div>
+
+            </div>
+
+        </div>
+
 
         <!-- jQuery -->
         <script src="js/jquery-1.12.0.min.js"></script>
@@ -961,33 +1130,40 @@
 
         <script type="text/javascript">
             $(document).ready(function () {
+                // Tooltrip activate
+                $('[data-toggle="tooltip"]').tooltip();
+
+                // Sidebar open or collapse toggle
                 $('#sidebarCollapse').on('click', function () {
                     $(this).toggleClass('active');
                     $('body').toggleClass('body-collapsed');
                     $('#sidebar').toggleClass('active');
                     $('.navbar').toggleClass('active');
                 });
+
+                $('#cart-items-sidebar').on('click', function () {
+                    $(this).toggleClass('active');
+                    $('.items-cart-modal').toggleClass('active');
+                });
                 
+                // Main slider activate with interval of 10 seconds
                 $('.carousel').carousel({
                     interval: 10000
                 });
 
-                // <div class="table-item-counter">
-                //     <input type="number" placeholder="кол" value="0" min="0" max="9999">
-                //     <span class="table-item-counter-up"></span>
-                //     <span class="table-item-counter-down"></span>
-                // </div>
-                
+                // Input counter of table item increment                
                 function increment(inputElement) {
                     $(inputElement).val(parseInt(inputElement.val())+1);
                 }
 
+                // Input counter of table item decrement                
                 function decrement(inputElement) {
                     if(parseInt(inputElement.val()) > 0) {
                         $(inputElement).val(parseInt(inputElement.val())-1);
                     } 
                 } 
-
+                
+                // Binding event on custom input counter of table item          
                 $('.table-item-counter span').on('click', function () {
                     let currentInput = $(this).siblings('input[type="number"]');
 
