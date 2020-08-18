@@ -12,11 +12,11 @@
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="styles/main.css">
     </head>
-    <body>
+    <body class="body-collapsed">
 
         <div class="wrapper site-tools w-100">
             <!-- Sidebar Holder -->
-            <nav id="sidebar">
+            <nav id="sidebar" class="active">
                 <div class="sidebar-header">
                     <a href="#">
                         <img class="siteLogo_lg" src="assets/logo_lg.png" alt="Logo large">
@@ -182,11 +182,11 @@
             <div class="content">
                 <div class="shop-content">
 
-                    <nav class="navbar navbar-default navbar navbar-expand-lg navbar-light bg-light">
+                    <nav class="navbar active navbar-default navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
 
                             <div class="navbar-header">
-                                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                <button type="button" id="sidebarCollapse" class="navbar-btn active">
                                     <span></span>
                                 </button>
                                 <span class="search-area">
@@ -951,173 +951,193 @@
             </div>
         </div>
 
-        <div class="items-cart-modal">
-            
-            <div class="items-cart-wrapper">
-                <div class="cart-empty-title">
-                    Корзина еще пуста
+        <div class="items-cart-outer"> 
+            <div class="items-cart-modal">
+
+                <div class="items-cart-wrapper">
+                    <div class="cart-empty-title">
+                        Корзина еще пуста
+                    </div>
+                    <div class="cart-empty-image">
+                        <img src="./assets/cart-empty-image.svg" alt="Корзина пуста">
+                    </div>
                 </div>
-                <div class="cart-empty-image">
-                    <img src="./assets/cart-empty-image.svg" alt="Корзина пуста">
+
+                <div class="items-cart-wrapper">
+
+                    <div class="cart-item">
+                        <div class="cart-item-img">
+                            <img width="60" height="60" src="./assets/table-items/item-1.jpg" alt="Image">
+                        </div>
+                        <div class="cart-item-content">
+                            <div class="cart-item-title">
+                                Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
+                            </div>
+                            <div class="cart-item-manufacturer">
+                                FarmStay
+                            </div>
+                            <div class="cart-item-codes">
+                                <div class="cart-item-id">
+                                    <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
+                                    <span>015030</span>
+                                </div>
+                                <div class="cart-item-barcode">
+                                    <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
+                                    <span>8809389038039</span>
+                                </div>
+                            </div>
+                            <div class="cart-item-price-calc">
+                                <div class="table-item-counter">
+                                    <input type="number" placeholder="кол" value="0" min="0" max="9999">
+                                    <span class="table-item-counter-up"></span>
+                                    <span class="table-item-counter-down"></span>
+                                </div>
+                                <div class="cart-calculated-price">
+                                    $43,20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-img">
+                            <img width="60" height="60" src="./assets/table-items/item-2.jpg" alt="Image">
+                        </div>
+                        <div class="cart-item-content">
+                            <div class="cart-item-title">
+                                Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
+                            </div>
+                            <div class="cart-item-manufacturer">
+                                FarmStay
+                            </div>
+                            <div class="cart-item-codes">
+                                <div class="cart-item-id">
+                                    <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
+                                    <span>015030</span>
+                                </div>
+                                <div class="cart-item-barcode">
+                                    <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
+                                    <span>8809389038039</span>
+                                </div>
+                            </div>
+                            <div class="cart-item-price-calc">
+                                <div class="table-item-counter">
+                                    <input type="number" placeholder="кол" value="0" min="0" max="9999">
+                                    <span class="table-item-counter-up"></span>
+                                    <span class="table-item-counter-down"></span>
+                                </div>
+                                <div class="cart-calculated-price">
+                                    $43,20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-img">
+                            <img width="60" height="60" src="./assets/table-items/item-3.jpg" alt="Image">
+                        </div>
+                        <div class="cart-item-content">
+                            <div class="cart-item-title">
+                                Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
+                            </div>
+                            <div class="cart-item-manufacturer">
+                                FarmStay
+                            </div>
+                            <div class="cart-item-codes">
+                                <div class="cart-item-id">
+                                    <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
+                                    <span>015030</span>
+                                </div>
+                                <div class="cart-item-barcode">
+                                    <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
+                                    <span>8809389038039</span>
+                                </div>
+                            </div>
+                            <div class="cart-item-price-calc">
+                                <div class="table-item-counter">
+                                    <input type="number" placeholder="кол" value="0" min="0" max="9999">
+                                    <span class="table-item-counter-up"></span>
+                                    <span class="table-item-counter-down"></span>
+                                </div>
+                                <div class="cart-calculated-price">
+                                    $43,20
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
                 </div>
+
+                <div class="items-cart-wrapper">
+
+                    <div class="cart-order-calculated">
+                        <div>
+                            <div class="title-calculated">Итоговый вес брутто:</div>
+                            <div class="value-calculated">1896 г.</div>
+                        </div>
+                        <div>
+                            <div class="title-calculated">Стоимость товаров:</div>
+                            <div class="value-calculated">$100,00</div>
+                        </div>
+                        <div>
+                            <div class="title-calculated">Стоимость доставки:</div>
+                            <div class="value-calculated">Станет видна после выбора курьера</div>
+                        </div>
+                        <div class="cart-delivery-service">
+                            <input type="radio" id="cart-delivery-sevice-ems" name="cart-delivery-sevice" value="EMS"/>
+                            <label class="delivery-service" for="cart-delivery-sevice-ems">EMS</label> 
+
+                            
+                            <input type="radio" id="cart-delivery-sevice-cargo" name="cart-delivery-sevice" value="Карго Россия"/>
+                            <label class="delivery-service" for="cart-delivery-sevice-cargo">Карго Россия</label> 
+ 
+                            <input type="radio" id="cart-delivery-sevice-avia" name="cart-delivery-sevice" value="Авиа Карго Россия"/>
+                            <label class="delivery-service" for="cart-delivery-sevice-avia">Авиа Карго Россия</label>
+                            
+                            <input type="radio" id="cart-delivery-sevice-other" name="cart-delivery-sevice" value="Другое"/>
+                            <label class="delivery-service" for="cart-delivery-sevice-other">Другое</label> 
+                        </div>
+                        <div>
+                            <div class="title-calculated">Стоимость доставки:</div>
+                            <div class="value-calculated">$32,90</div>
+                        </div>
+                        <div>
+                            <div class="title-calculated">Депозит:</div>
+                            <div class="value-calculated">$55,00</div>
+                        </div>
+                        <div>
+                            <div class="title-calculated">Курьер:</div>
+                            <div class="value-calculated">
+                                EMS
+                                <span class="change-delivery-man">
+                                    <img width="20" height="20" src="./assets/cart-icons/icon-change-delivery.svg" alt="Change">
+                                    Выбрать другого курьера
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-order-full-price">
+                        <span class="cart-full-price-title">
+                            Итого к оплате:
+                        </span>
+                        <span class="cart-full-price-money">
+                            $77,90
+                        </span>
+                        <span class="cart-full-price-discount">
+                            $132,90
+                        </span>
+                    </div>
+                    
+                    <div class="cart-order-actions">
+                        <button>Оформить заказ</button>
+                        <a href="#">Перейти в корзину</a>
+                    </div>
+
+                </div>
+
             </div>
-
-            <div class="items-cart-wrapper">
-
-                <div class="cart-item">
-                    <div class="cart-item-img">
-                        <img width="60" height="60" src="./assets/table-items/item-1.jpg" alt="Image">
-                    </div>
-                    <div class="cart-item-content">
-                        <div class="cart-item-title">
-                            Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
-                        </div>
-                        <div class="cart-item-manufacturer">
-                            FarmStay
-                        </div>
-                        <div class="cart-item-codes">
-                            <div class="cart-item-id">
-                                <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
-                                <span>015030</span>
-                            </div>
-                            <div class="cart-item-barcode">
-                                <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
-                                <span>8809389038039</span>
-                            </div>
-                        </div>
-                        <div class="cart-item-price-calc">
-                            <div class="table-item-counter">
-                                <input type="number" placeholder="кол" value="0" min="0" max="9999">
-                                <span class="table-item-counter-up"></span>
-                                <span class="table-item-counter-down"></span>
-                            </div>
-                            <div class="cart-calculated-price">
-                                $43,20
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart-item">
-                    <div class="cart-item-img">
-                        <img width="60" height="60" src="./assets/table-items/item-2.jpg" alt="Image">
-                    </div>
-                    <div class="cart-item-content">
-                        <div class="cart-item-title">
-                            Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
-                        </div>
-                        <div class="cart-item-manufacturer">
-                            FarmStay
-                        </div>
-                        <div class="cart-item-codes">
-                            <div class="cart-item-id">
-                                <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
-                                <span>015030</span>
-                            </div>
-                            <div class="cart-item-barcode">
-                                <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
-                                <span>8809389038039</span>
-                            </div>
-                        </div>
-                        <div class="cart-item-price-calc">
-                            <div class="table-item-counter">
-                                <input type="number" placeholder="кол" value="0" min="0" max="9999">
-                                <span class="table-item-counter-up"></span>
-                                <span class="table-item-counter-down"></span>
-                            </div>
-                            <div class="cart-calculated-price">
-                                $43,20
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart-item">
-                    <div class="cart-item-img">
-                        <img width="60" height="60" src="./assets/table-items/item-3.jpg" alt="Image">
-                    </div>
-                    <div class="cart-item-content">
-                        <div class="cart-item-title">
-                            Сыворотка на основе стволовых клеток винограда отбеливание GRAPE STEM CELL  WHITENING AMPLE
-                        </div>
-                        <div class="cart-item-manufacturer">
-                            FarmStay
-                        </div>
-                        <div class="cart-item-codes">
-                            <div class="cart-item-id">
-                                <img src="./assets/cart-icons/icon-A.svg" alt="Item ID">
-                                <span>015030</span>
-                            </div>
-                            <div class="cart-item-barcode">
-                                <img src="./assets/cart-icons/icon-barcode.svg" alt="Item barcode">
-                                <span>8809389038039</span>
-                            </div>
-                        </div>
-                        <div class="cart-item-price-calc">
-                            <div class="table-item-counter">
-                                <input type="number" placeholder="кол" value="0" min="0" max="9999">
-                                <span class="table-item-counter-up"></span>
-                                <span class="table-item-counter-down"></span>
-                            </div>
-                            <div class="cart-calculated-price">
-                                $43,20
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-            </div>
-
-            <div class="items-cart-wrapper">
-
-                <div class="cart-order-calculated">
-                    <div>
-                        <div class="title-calculated">Итоговый вес брутто:</div>
-                        <div class="value-calculated">1896 г.</div>
-                    </div>
-                    <div>
-                        <div class="title-calculated">Стоимость товаров:</div>
-                        <div class="value-calculated">$100,00</div>
-                    </div>
-                    <div>
-                        <div class="title-calculated">Стоимость доставки:</div>
-                        <div class="value-calculated">$32,90</div>
-                    </div>
-                    <div>
-                        <div class="title-calculated">Депозит:</div>
-                        <div class="value-calculated">$55,00</div>
-                    </div>
-                    <div>
-                        <div class="title-calculated">Курьер:</div>
-                        <div class="value-calculated">
-                            EMS
-                            <span class="change-delivery-man">
-                                <img width="20" height="20" src="./assets/cart-icons/icon-change-delivery.svg" alt="Change">
-                                Выбрать другого курьера
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart-order-full-price">
-                    <span class="cart-full-price-title">
-                        Итого к оплате:
-                    </span>
-                    <span class="cart-full-price-money">
-                        $77,90
-                    </span>
-                    <span class="cart-full-price-discount">
-                        $132,90
-                    </span>
-                </div>
-                
-                <div class="cart-order-actions">
-                    <button>Оформить заказ</button>
-                    <a href="#">Перейти в корзину</a>
-                </div>
-
-            </div>
-
         </div>
 
 
@@ -1135,15 +1155,24 @@
 
                 // Sidebar open or collapse toggle
                 $('#sidebarCollapse').on('click', function () {
-                    $(this).toggleClass('active');
+                    $('#sidebarCollapse').toggleClass('active');
                     $('body').toggleClass('body-collapsed');
                     $('#sidebar').toggleClass('active');
                     $('.navbar').toggleClass('active');
                 });
 
+                function toggleCartModal() {
+                    $('.buyer-cart').toggleClass('activated');
+                    $('.items-cart-modal').toggleClass('activated');
+                    $('.items-cart-outer').toggleClass('activated');
+                }
+
                 $('#cart-items-sidebar').on('click', function () {
-                    $(this).toggleClass('active');
-                    $('.items-cart-modal').toggleClass('active');
+                    toggleCartModal();
+                });
+
+                $('.items-cart-outer').on('click', function () {
+                    toggleCartModal();
                 });
                 
                 // Main slider activate with interval of 10 seconds

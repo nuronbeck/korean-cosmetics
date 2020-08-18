@@ -118,6 +118,7 @@
 ----------------------------------------------------- */
 :root {
     --blue-darken: #457e98;
+    --blue-darken-05: #457e9850;
     --blue-lighten: #d2e3eb;
     --blue-lighten-05: #d2e3eb50;
     --aero: #f6fafb;
@@ -758,24 +759,51 @@ input[type=number]::-webkit-outer-spin-button {
 
 .items-cart-modal {
     position: fixed;
-    top: 68px;
-    right: -588px;
+    top: 68px; 
     min-height: 100vh;
     max-height: 100vh;
     overflow-y: scroll;
     z-index: 11000;
     width: 588px;
     font-size: 18px;
-    background-color: var(--white);
-    box-shadow: -36px 0 48px rgba(0, 0, 0, 0.1);
+    background-color: var(--white); 
     padding: 24px 36px;
     padding-bottom: 150px;
     box-sizing: border-box;
-    transition: 0.3s right ease-in-out;
+    transition: 0.3s all ease-in-out;
+    right: -588px;
+    box-shadow: -36px 0 48px rgba(0, 0, 0, 0);
+    opacity: 0;
 }
 
-.items-cart-modal.active { 
+.items-cart-modal.activated { 
     right: 0;
+    box-shadow: -36px 0 48px rgba(0, 0, 0, 0.16);
+    opacity: 1;
+}
+
+.items-cart-outer.activated {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 10500;
+}
+
+#cart-items-sidebar.activated {
+    cursor: pointer;
+    background-color: var(--pink-color);
+    color: var(--white);
+}
+
+#cart-items-sidebar.activated > a img:not(.nav-menu-active) {
+    display: none;
+}
+
+#cart-items-sidebar.activated a img.nav-menu-active {
+    display: block;
 }
 
 .items-cart-modal .items-cart-wrapper {
@@ -845,6 +873,55 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 10px;
 }
 
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service {
+    justify-content: space-between;
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service input[type="radio"] {
+    display: none;
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service label {
+    cursor: pointer;
+    width: 120px;
+    height: 140px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-darken-05);
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service label.delivery-service:hover {
+    color: var(--white);
+    background-color: var(--pink-color);
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service input[type="radio"]:checked + label {
+    color: var(--white);
+    background-color: var(--pink-color);
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service label.delivery-service::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px; 
+    z-index: 11200;
+    width: 18px;
+    height: 18px;
+    background-image: url(../assets/cart-icons/icon-delivery-selected.svg);
+    border-radius: 50%;
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-calculated div.cart-delivery-service input[type="radio"]:checked + label.delivery-service::after {
+    background-color: var(--blue-darken);
+}
+
 .items-cart-modal .items-cart-wrapper .cart-order-calculated div .title-calculated {
     width: 186px;
     text-align: right;
@@ -901,9 +978,15 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--white);
     background-color: var(--pink-color);
     border: none;
+    outline: 0;
     width: 100%;
     text-align: center;
     padding: 12px;
+    transition: .3s ease-in-out;
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-actions button:hover {
+    box-shadow: 1px 1px 10px var(--blue-darken); 
 }
 
 .items-cart-modal .items-cart-wrapper .cart-order-actions a {
@@ -911,6 +994,10 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 13px;
     text-transform: uppercase; 
     color: var(--grey-light); 
+}
+
+.items-cart-modal .items-cart-wrapper .cart-order-actions a:hover {
+    color: var(--pink-color);
 }
 
 .items-cart-modal .items-cart-wrapper .cart-empty-title {
@@ -1042,6 +1129,10 @@ footer h3 {
     .navbar.active {
         left: 0;
         width: 100%;
+    }
+
+    .tooltip {
+        display: none !important;
     }
     
     #sidebar.active {
