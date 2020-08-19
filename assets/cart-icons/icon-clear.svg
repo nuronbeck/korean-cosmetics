@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_273" data-name="Прямоугольник 273" width="20" height="20" transform="translate(1162 141)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Группа_масок_55" data-name="Группа масок 55" transform="translate(-1162 -141)" clip-path="url(#clip-path)">
+    <g id="trash-outline" transform="translate(1160.571 139.571)">
+      <path id="Контур_92" data-name="Контур 92" d="M5,5l.893,14.286a1.434,1.434,0,0,0,1.429,1.429h8.214a1.437,1.437,0,0,0,1.429-1.429L17.857,5" fill="none" stroke="#e00e55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429"/>
+      <line id="Линия_45" data-name="Линия 45" x2="15.714" transform="translate(3.571 5)" stroke="#e00e55" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.429"/>
+      <path id="Контур_93" data-name="Контур 93" d="M8.571,5V3.214h0A1.068,1.068,0,0,1,9.643,2.143h3.571a1.068,1.068,0,0,1,1.071,1.071h0V5" fill="none" stroke="#e00e55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429"/>
+      <line id="Линия_46" data-name="Линия 46" y2="10" transform="translate(11.429 7.857)" fill="none" stroke="#e00e55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429"/>
+      <line id="Линия_47" data-name="Линия 47" x2="0.357" y2="10" transform="translate(8.214 7.857)" fill="none" stroke="#e00e55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429"/>
+      <line id="Линия_48" data-name="Линия 48" x1="0.357" y2="10" transform="translate(14.286 7.857)" fill="none" stroke="#e00e55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.429"/>
+    </g>
+  </g>
+</svg>

@@ -585,6 +585,47 @@ input[type=number]::-webkit-outer-spin-button {
 /* Tables
 ================================== */
 
+.Rtable .cart-page-table-main-head {
+    padding: 33px 24px 0 24px; 
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+.Rtable .cart-page-table-main-head .cart-page-table-main-title {
+    font-size: 24px;
+    color: var(--grey-dark);
+    margin-bottom: 18px;
+}
+
+.Rtable .cart-page-table-main-head .cart-page-table-main-searchbox {
+    width: 100%; 
+    position: relative;
+}
+
+.Rtable .cart-page-table-main-head .cart-page-table-main-searchbox input[type="text"] {
+    border:none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    padding-left: 32px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--blue-lighten);
+    transition: .3s padding-left ease-in-out;
+}
+
+.Rtable .cart-page-table-main-head .cart-page-table-main-searchbox input[type="text"]:focus {
+    padding-left: 42px;
+}
+
+.Rtable .cart-page-table-main-head .cart-page-table-main-searchbox .search-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/navbar-icons/search.svg');
+}
+
 .Rtable {
     border-radius: 8px 8px 0 0;
     box-sizing: border-box;
@@ -600,7 +641,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    border-bottom: 1px solid var(--blue-darken-05);
+    border-bottom: 1px solid var(--blue-lighten);
 }
 
 .Rtable .Rtable-row.selected {
@@ -618,7 +659,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Cell styles
 ================================== */
 .Rtable-cell--head {
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 .Rtable-cell---blue {
@@ -645,6 +686,33 @@ input[type=number]::-webkit-outer-spin-button {
 .Rtable--8cols > .Rtable-cell {
     width: 10.5%;
 }
+
+.Rtable--10cols > .Rtable-cell {
+    width: 9%;
+}
+
+.Rtable--10cols .Rtable-cell--checker {
+    width: 20px;
+}
+
+.Rtable--10cols .Rtable-cell--checker .Rtable-cell--checker-icon {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-image: url('../assets/cart-icons/icon-delivery-selected.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Rtable--10cols .Rtable-cell--checker .Rtable-cell--delete-icon {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-image: url('../assets/cart-icons/icon-delete.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .Rtable--8cols > .Rtable-cell:nth-child(1) {
     max-width: 85px;
@@ -725,9 +793,126 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--pink-color);
 }
 
+/* 10 */
+
+
+.Rtable--10cols > .Rtable-cell:nth-child(1) {
+    width: 30px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(11) {
+    width: 30px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(9) .table-item-price-hidden,
+.Rtable--10cols > .Rtable-cell:nth-child(10) .table-item-price-hidden {
+    display: none;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(2) {
+    max-width: 65px; 
+}
+  
+.Rtable--10cols > .Rtable-cell--photo img {
+    width: 60px;
+    height: 60px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(3) {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(3) .Rtable-cell-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(3) .Rtable-cell-row span:nth-child(2) {
+    margin-left: 27px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(4),
+.Rtable--10cols > .Rtable-cell:nth-child(5),
+.Rtable--10cols > .Rtable-cell:nth-child(6),
+.Rtable--10cols > .Rtable-cell:nth-child(7) {
+    width: 80px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(8) {
+    width: 100px;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(9) {
+    width: 80px;
+    justify-content: flex-start;
+}
+
+.Rtable--10cols > .Rtable-cell:nth-child(10){
+    width: 130px;
+    justify-content: flex-start;
+}
+
+.Rtable--10cols > .Rtable-cell--total .table-item-price {
+    font-size: 18px;
+}
+
+.Rtable .cart-page-table-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 24px;
+}
+
+.Rtable .cart-page-table-actions button {
+    outline: none;
+    border: none;
+    color: var(--grey-light);
+    background-color: transparent;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+
+.Rtable .cart-page-table-actions button:hover {
+    color: var(--pink-color);
+}
+
+.Rtable .cart-page-table-actions button .cart-page-table-actions-add-icon,
+.Rtable .cart-page-table-actions button .cart-page-table-actions-clear-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/cart-icons/icon-add.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+.Rtable .cart-page-table-actions button .cart-page-table-actions-clear-icon {
+    background-image: url('../assets/cart-icons/icon-clear.svg');
+}
+
+
 /* Responsive
 ==================================== */
 @media all and (max-width: 900px) {
+
+    .Rtable--10cols > .Rtable-cell:nth-child(1), .shop-content .items-pagination {
+        display: none;
+    }
+
+    .Rtable--10cols > .Rtable-cell:nth-child(9) .table-item-price-hidden,
+    .Rtable--10cols > .Rtable-cell:nth-child(10) .table-item-price-hidden {
+        display: block;
+        padding-right: 12px;
+    }
 
     .Rtable .Rtable-header {
         display: none;
@@ -741,10 +926,15 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: transparent;
     }
 
+    .Rtable .cart-page-table-main-head {
+        border-radius: 8px;
+        padding-bottom: 15px;
+    }
+
     .Rtable .Rtable-body-row, .Rtable .Rtable-row.selected {
         padding-top: 15px;
-        background-color: var(--white);
-        margin-bottom: 24px;
+        background-color: var(--white); 
+        margin-top: 24px;
         border-radius: 8px;
         border-bottom: none;
     }
